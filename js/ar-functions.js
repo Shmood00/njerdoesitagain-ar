@@ -14,14 +14,96 @@ AFRAME.registerComponent("play-on-detection", {
       vid.pause();
     });
 
-    /*this.el.sceneEl.addEventListener("click", (e) => {
-      if(vid.muted){
-        vid.muted = false;
-      }else{
-        vid.muted = true;
-      }
-    });*/
+  }
 
+});
+
+AFRAME.registerComponent("move-object-one", {
+  schema: {
+    enabled: { default: true}
+  },
+
+  init: function () {
+    this.changePosition = this.changePosition.bind(this);
+    this.pos = this.el.getAttribute("position");
+    
+    this.isVisible = false;
+
+    this.el.sceneEl.addEventListener("markerFound", (e) => {
+        //console.log("found");
+        this.isVisible = true;
+    });
+
+    this.el.sceneEl.addEventListener("markerLost", (e) => {
+        //console.log("found");
+        this.isVisible = false;
+    });
+
+  },
+
+  update: function (){
+    if(this.data.enabled){
+      this.el.sceneEl.addEventListener("onefingermove", this.changePosition);
+    } else {
+      this.el.sceneEl.removeEventListener("onefingermove", this.changePosition);
+    }
+  },
+
+  changePosition: function(event){
+    if(this.isVisible){
+      
+
+      this.pos.z -= (event.detail.positionChange.y * 200)*-1;
+      this.pos.x += (event.detail.positionChange.x * 200);
+
+      this.el.setAttribute("position", this.pos);
+
+    }
+  }
+
+});
+
+AFRAME.registerComponent("move-object-three", {
+  schema: {
+    enabled: { default: true}
+  },
+
+  init: function () {
+    this.changePosition = this.changePosition.bind(this);
+    this.pos = this.el.getAttribute("position");
+    
+    this.isVisible = false;
+
+    this.el.sceneEl.addEventListener("markerFound", (e) => {
+        //console.log("found");
+        this.isVisible = true;
+    });
+
+    this.el.sceneEl.addEventListener("markerLost", (e) => {
+        //console.log("found");
+        this.isVisible = false;
+    });
+
+  },
+
+  update: function (){
+    if(this.data.enabled){
+      this.el.sceneEl.addEventListener("threefingermove", this.changePosition);
+    } else {
+      this.el.sceneEl.removeEventListener("threefingermove", this.changePosition);
+    }
+  },
+
+  changePosition: function(event){
+    if(this.isVisible){
+      
+
+      this.pos.z -= (event.detail.positionChange.y * 200)*-1;
+      this.pos.x += (event.detail.positionChange.x * 200);
+
+      this.el.setAttribute("position", this.pos);
+
+    }
   }
 
 });
