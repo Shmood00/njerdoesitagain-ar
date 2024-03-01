@@ -48,19 +48,19 @@
         vr-mode-ui="enabled: false;" id="scene" renderer="logarithmicDepthBuffer: true;" gesture-detector>
             <!-- AR assets -->
             <a-assets>
-                <video id="creation" webkit-playsinline playsinline loop="true" muted="true" src="./njeridoesitagain/videos/output.mp4"></video>
-                <a-asset-item id="pawn" src="./njeridoesitagain/models/pawn/pawn.gltf"></a-asset-item>
+                <video id="creation" webkit-playsinline playsinline loop="true" muted="true" src="./videos/output.mp4"></video>
+                <a-asset-item id="pawn" src="./models/pawn/pawn.gltf"></a-asset-item>
             </a-assets>
             
             
-            <a-nft type="nft" url="./njeridoesitagain/images/markers/women" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-nft type="nft" url="./images/markers/women" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
                 <a-entity id="entity" material="src: #creation">
                     <a-video src="#creation" width="100" height="200" position="50 -100 -100" rotation="-90 0 0" play-on-detection object-scale></a-video>
                 </a-entity>
 
             </a-nft>
 
-            <a-nft type="nft" url="./njeridoesitagain/images/markers/pawn" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-nft type="nft" url="./images/markers/pawn" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
 
                 <a-entity
                     id="pawn"
