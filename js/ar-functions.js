@@ -30,12 +30,10 @@ AFRAME.registerComponent("move-object-one", {
     this.isVisible = false;
 
     this.el.sceneEl.addEventListener("markerFound", (e) => {
-        //console.log("found");
         this.isVisible = true;
     });
 
     this.el.sceneEl.addEventListener("markerLost", (e) => {
-        //console.log("found");
         this.isVisible = false;
     });
 
@@ -75,12 +73,10 @@ AFRAME.registerComponent("move-object-three", {
     this.isVisible = false;
 
     this.el.sceneEl.addEventListener("markerFound", (e) => {
-        //console.log("found");
         this.isVisible = true;
     });
 
     this.el.sceneEl.addEventListener("markerLost", (e) => {
-        //console.log("found");
         this.isVisible = false;
     });
 
@@ -126,7 +122,6 @@ AFRAME.registerComponent("object-scale", {
 
   
       this.el.sceneEl.addEventListener("markerFound", (e) => {
-        //console.log("found");
         this.isVisible = true;
       });
   
