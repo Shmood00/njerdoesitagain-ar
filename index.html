@@ -55,7 +55,7 @@
             
             <a-nft type="nft" url="njeridoesitagain/markers/women" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
                 <a-entity id="entity" material="src: #creation">
-                    <a-video src="#creation" width="100" height="200" position="50 -100 -100" rotation="-90 0 0" play-on-detection object-scale></a-video>
+                    <a-video src="#creation" width="100" height="200" position="50 -100 -100" rotation="-90 0 0" move-object-one play-on-detection object-scale></a-video>
                 </a-entity>
 
             </a-nft>
@@ -69,7 +69,8 @@
                     raycaster="objects: .clickable"
                     scale="500 500 500"
                     gltf-model="#pawn"
-                    
+
+                    move-object-three
                     gesture-handler
                 ></a-entity>
             </a-nft>
