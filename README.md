@@ -1,4 +1,4 @@
-# Welcome to Njeridoesitagain's GitHub!
+# Welcome to Njerdoesitagain's GitHub!
 
 This GitHub page hosts the website you can use to view the AR (augmented reality) features that are attached to each one of Njeri's pieces!
 
