@@ -13,7 +13,7 @@ You've most likely used AR before - remember Pokémon GO? Or, have you ever used
 
 # How Do I Use It?
 
-Experiencing the AR built into your paintings is simple! Navigate to the [website](https://shmood00.github.io/njerdoesitagain/) provided to you, accept the prompts displayed and point your camera directly at your print!
+Experiencing the AR built into your paintings is simple! Navigate to the [website](https://shmood00.github.io/njerdoesitagain/) provided to you, accept the prompts displayed, and point your camera directly at your print!
 
 If you're having issues with disaplying the AR content there are a few things you can try:
 1. Ensure you are in a well lit area
