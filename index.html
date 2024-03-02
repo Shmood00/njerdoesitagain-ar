@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Njerdoesitagain ARt</title>
         <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
         
         <!-- Load file needed for NFT image marker -->
@@ -29,13 +29,13 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Welcome to Njeridoesitagain's AR!</h5>
+                        <h5 class="modal-title">Welcome to Njerdoesitagain's AR!</h5>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                         <p>Hover your phone over your piece for a surprise! You can use 2 fingers to zoom in / out on the item.</p>
-                        <p>With select pieces you can use 1 finger to rotate and manipulate the object.</p>
-                        
+                        <p>If a video is displayed, 1 finger can be used to move the video around the screen.</p>
+                        <p>If a 3D object is displayed, 1 finger rotates the object and 3 fingers can be used to move it around the screen.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -53,14 +53,14 @@
             </a-assets>
             
             
-            <a-nft type="nft" url="njeridoesitagain/markers/women" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-nft type="nft" url="njerdoesitagain/markers/women" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
                 <a-entity id="entity" material="src: #creation">
                     <a-video src="#creation" width="100" height="200" position="50 -100 -100" rotation="-90 0 0" move-object-one play-on-detection object-scale></a-video>
                 </a-entity>
 
             </a-nft>
 
-            <a-nft type="nft" url="njeridoesitagain/markers/pawn" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-nft type="nft" url="njerdoesitagain/markers/pawn" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
 
                 <a-entity
                     id="pawn"
